@@ -1,18 +1,17 @@
 {
   "files": {
     "main.css": "/chitscheme/static/css/main.28f98388.css",
-    "main.js": "/chitscheme/static/js/main.2df5b1dd.js",
-    "static/js/453.fe14b25a.chunk.js": "/chitscheme/static/js/453.fe14b25a.chunk.js",
+    "main.js": "/chitscheme/static/js/main.ab04bbd5.js",
     "static/media/bootstrap-icons.woff?": "/chitscheme/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/HeaderBanner.jpg": "/chitscheme/static/media/HeaderBanner.99e9e128660d331ae37a.jpg",
     "static/media/bootstrap-icons.woff2?": "/chitscheme/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "static/media/backround.jpg": "/chitscheme/static/media/backround.60b57c52e359897273c3.jpg",
     "index.html": "/chitscheme/index.html",
     "main.28f98388.css.map": "/chitscheme/static/css/main.28f98388.css.map",
-    "main.2df5b1dd.js.map": "/chitscheme/static/js/main.2df5b1dd.js.map",
-    "453.fe14b25a.chunk.js.map": "/chitscheme/static/js/453.fe14b25a.chunk.js.map"
+    "main.ab04bbd5.js.map": "/chitscheme/static/js/main.ab04bbd5.js.map"
   },
   "entrypoints": [
     "static/css/main.28f98388.css",
-    "static/js/main.2df5b1dd.js"
+    "static/js/main.ab04bbd5.js"
   ]
 }
