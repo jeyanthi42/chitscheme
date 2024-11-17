@@ -22,21 +22,21 @@ export const DataProvider = ({children})=>{
         id: 1,
         enrolleName:"Chandra",
         mobileNO: 9976824238,
-        chitCount : 3,
-        paidweeks:1,
+        chitCount : 4,
+        paidweeks:2,
         inProgress:1,
         overDueWeek : 0,
-        futureWeek:44
+        futureWeek:43
      },
      {
         id: 2,
         enrolleName:"KalaiSelvi",
         mobileNO: 9677780083,
         chitCount : 2,
-        paidweeks:1,
+        paidweeks:2,
         inProgress:1,
         overDueWeek : 0,
-        futureWeek:44
+        futureWeek:43
      },
 
      {
@@ -46,8 +46,8 @@ export const DataProvider = ({children})=>{
         chitCount : 1,
         paidweeks:1,
         inProgress:1,
-        overDueWeek : 0,
-        futureWeek:44
+        overDueWeek : 1,
+        futureWeek:43
      },
      
      {
@@ -55,10 +55,10 @@ export const DataProvider = ({children})=>{
         enrolleName:"Sasi",
         mobileNO: 6381106221,
         chitCount : 1,
-        paidweeks:1,
+        paidweeks:2,
         inProgress:1,
         overDueWeek : 0,
-        futureWeek:44
+        futureWeek:43
      },
      
      {
@@ -68,30 +68,18 @@ export const DataProvider = ({children})=>{
         chitCount : 1,
         paidweeks:1,
         inProgress:1,
-        overDueWeek : 0,
-        futureWeek:44
-     },
-     
+        overDueWeek : 1,
+        futureWeek:43
+     },    
      {
         id: 6,
-        enrolleName:"Poobalan",
-        mobileNO: 8220422903,
-        chitCount : 1,
-        paidweeks:0,
-        inProgress:1,
-        overDueWeek : 1,
-        futureWeek:44
-     },
-     
-     {
-        id: 7,
         enrolleName:"Mathiyazhagan",
         mobileNO:8056054225,
         chitCount : 1,
         paidweeks:1,
         inProgress:1,
-        overDueWeek : 0,
-        futureWeek:44
+        overDueWeek : 1,
+        futureWeek:43
      }
 
 
@@ -103,19 +91,26 @@ useEffect(() =>{
 });
 const currentDate = new Date();  const currentDay = currentDate.getDay();
 let dueDate1 = currentDate.setDate(currentDate.getDate()+(7-currentDay))  ;
-const dueDate = new Date(dueDate1).getDate()+ "/"+ (new Date(dueDate1).getMonth() +1 )+ "/" + new Date(dueDate1).getFullYear()        
+var dueDate = 0;
+if(currentDay==0){
+    dueDate = new Date().toLocaleDateString("hi-IN");  
+}
+else{
+    dueDate = new Date(dueDate1).getDate()+ "/"+ (new Date(dueDate1).getMonth() +1 )+ "/" + new Date(dueDate1).getFullYear()        
+}
 
+ 
     const navigate = useNavigate('');
     const handleLoginChit=async(e)=>{
         e.preventDefault();
         sessionStorage.setItem("loginid",loginNumber);
-       await( setloginMemberInfo(chitMemberInfo.filter((chitmember)=>loginNumber===chitmember.mobileNO)))      
-       sessionStorage.setItem("loginmemberDetail",JSON.stringify(chitMemberInfo.filter((chitmember)=>loginNumber===chitmember.mobileNO)));               
-      if( chitMemberInfo.filter((chitmember)=>loginNumber===chitmember.mobileNO).length!==0){
+       await( setloginMemberInfo(chitMemberInfo.filter((chitmember)=>loginNumber==chitmember.mobileNO)))      
+       sessionStorage.setItem("loginmemberDetail",JSON.stringify(chitMemberInfo.filter((chitmember)=>loginNumber==chitmember.mobileNO)));               
+      if( chitMemberInfo.filter((chitmember)=>loginNumber==chitmember.mobileNO).length!=0){
         navigate("/Home")
       }
       else{
-        navigate("/") ;
+        navigate("/chitscheme") ;
         alert("Enter the Correct mobile number");
  
       }    
