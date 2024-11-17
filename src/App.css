@@ -36,3 +36,64 @@
     transform: rotate(360deg);
   }
 }
+
+
+.loginCardprob{
+  --bs-border-width: 4px;
+  --bs-body-bg: rgba(188, 235, 245, 0.623);
+
+}
+
+.loginbtn{
+  margin: 10px;
+  }
+
+.phoneProb {
+  --bs-border-color:rgba(7, 174, 240, 0.788);
+  --bs-tertiary-bg:#ffc107;
+}
+
+.NavProb{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.NavProb:hover, .NavProb:focus{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: White;
+}
+
+.infocard{
+  --bs-border-width: 4px;
+  --bs-body-bg: #aee4f3a1;
+  text-align: left;
+
+}
+
+.content{
+  background-image: url('chitImage/backround.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.currentCardprob{
+  --bs-body-bg:#f0ae5767;
+
+}
+
+.successCardprob{
+  --bs-body-bg:#baf5bd98;
+
+}
+
+.dangerCardprob{
+  --bs-body-bg:rgba(247, 102, 102, 0.507);
+
+}
+
+.futureCardprob{
+  --bs-body-bg:rgba(219, 215, 215, 0.774) ;
+
+}
