@@ -27,9 +27,10 @@ const Loginpage = () => {
               <Form.Group>
               <InputGroup >
               <InputGroup.Text className='phoneProb'> <i className="bi bi-telephone h2"></i></InputGroup.Text>
-              <Form.Control id = 'id 'type="number" placeholder="Mobile Number"  className='phoneProb fst-italic' 
+              <Form.Control id = 'id'type="number" placeholder="Mobile Number"  className='phoneProb fst-italic' 
               onChange={(e)=>setLoginnumber(e.target.value)} />   
               </InputGroup>  
+              
               </Form.Group>
               <Button variant="warning" className='loginbtn fst-italic' type='submit'><b> Submit</b></Button>
            </Form>

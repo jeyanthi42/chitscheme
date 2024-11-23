@@ -1,0 +1,64 @@
+{
+  "chitmembers": [
+    {
+      "id": "1",
+      "enrolleName": "Chandra",
+      "mobileNO": 9976824238,
+      "chitCount": 4,
+      "paidweeks": 2,
+      "inProgress": 1,
+      "overDueWeek": 0,
+      "futureWeek": 43
+    },
+    {
+      "id": "2",
+      "enrolleName": "KalaiSelvi",
+      "mobileNO": 9677780083,
+      "chitCount": 2,
+      "paidweeks": 2,
+      "inProgress": 1,
+      "overDueWeek": 0,
+      "futureWeek": 43
+    },
+    {
+      "id": "3",
+      "enrolleName": "Malathi",
+      "mobileNO": 9944347004,
+      "chitCount": 1,
+      "paidweeks": 2,
+      "inProgress": 1,
+      "overDueWeek": 0,
+      "futureWeek": 43
+    },
+    {
+      "id": "4",
+      "enrolleName": "Sasi",
+      "mobileNO": 6381106221,
+      "chitCount": 1,
+      "paidweeks": 2,
+      "inProgress": 1,
+      "overDueWeek": 0,
+      "futureWeek": 43
+    },
+    {
+      "id": "5",
+      "enrolleName": "Sangeetha",
+      "mobileNO": 9965165324,
+      "chitCount": 1,
+      "paidweeks": 1,
+      "inProgress": 1,
+      "overDueWeek": 1,
+      "futureWeek": 43
+    },
+    {
+      "id": "6",
+      "enrolleName": "Mathiyazhagan",
+      "mobileNO": 8056054225,
+      "chitCount": 1,
+      "paidweeks": 1,
+      "inProgress": 1,
+      "overDueWeek": 1,
+      "futureWeek": 43
+    }
+  ]
+}

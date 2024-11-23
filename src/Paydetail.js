@@ -6,13 +6,10 @@ import Button from 'react-bootstrap/Button';
 import DataContext from './context/DataContext'
 
 const Paydetail = () => {
-  const {chitInfo,dueDate} = useContext(DataContext);
-  var loginMemInfo={}; var loginmember=[]; var getFutureWeeks =0;  var getFutureAmt =0 ;var getCurrentWeekNumber =0;var getCurrentDueAmt=0;
-  loginMemInfo = sessionStorage.getItem("loginmemberDetail");    
-  console.log(" This is home page Login Array",loginMemInfo);  
-  if(loginMemInfo!=null){
-      loginmember = JSON.parse(loginMemInfo);
-      console.log("Log array", loginmember[0].enrolleName);  
+  const {chitInfo,dueDate,loginmember} = useContext(DataContext);
+  var getFutureWeeks =0;  var getFutureAmt =0 ;var getCurrentWeekNumber =0;var getCurrentDueAmt=0;
+  //console.log(" This is home page Login Array",loginMemInfo);  
+  if(loginmember.length>0){
       getFutureWeeks = chitInfo.chitPeriod - (loginmember[0].paidweeks + loginmember[0].inProgress + loginmember[0].overDueWeek)
       getFutureAmt = getFutureWeeks*chitInfo.chit_due*loginmember[0].chitCount;     
       getCurrentWeekNumber = loginmember[0].paidweeks + loginmember[0].overDueWeek + 1   
@@ -22,7 +19,7 @@ const Paydetail = () => {
   return (
     <div>
       {
-        loginmember != null ?
+        loginmember.length >0 ?
         <Container>
       <div className='content'>        
       <Row>

@@ -53,6 +53,12 @@
   --bs-tertiary-bg:#ffc107;
 }
 
+.passwordProb{
+  --bs-border-color:rgba(7, 174, 240, 0.788);
+  --bs-tertiary-bg:#b29dfc;
+
+}
+
 .NavProb{
   text-decoration: none;
   color: white;
@@ -95,5 +101,12 @@
 
 .futureCardprob{
   --bs-body-bg:rgba(219, 215, 215, 0.774) ;
+
+}
+
+.loginCardprobmember{
+  --bs-tertiary-bg:#5932e6;
+  --bs-border-width: 4px;
+  --bs-body-bg: rgba(36, 186, 219, 0.726);
 
 }
